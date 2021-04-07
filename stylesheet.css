@@ -196,10 +196,10 @@ a.a2:hover{
     order: 1;
 }
 #head1{
-    background-image: linear-gradient( to right, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.2) 42.5%, rgba(255, 255, 255, 0.2) 42.5%, transparent 42.5%, transparent 42.5% );
+    background-image: linear-gradient( to right, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.2) 37.6%, rgba(255, 255, 255, 0.2) 37.6%, transparent 37.6%, transparent 37.6% );
 }
 #head2{
-    background-image: linear-gradient( to right, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.2) 34%, rgba(255, 255, 255, 0.2) 34%, transparent 34%, transparent 34% );
+    background-image: linear-gradient( to right, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.2) 30%, rgba(255, 255, 255, 0.2) 30%, transparent 30%, transparent 30% );
 }
 
 .para{
