@@ -243,6 +243,7 @@ a.a2:hover{
 
 .blogPara{
     flex: 50%;
+    padding-left: 50px;
     padding-right: 50px;
 }
 
@@ -267,7 +268,7 @@ a.a2:hover{
     flex-wrap: wrap;
     flex-direction: column;
     padding: 5px;
-    padding-left: 255px;
+    padding-left: 50px;
     padding-right: 15px;
     order: 1;
 }
@@ -279,18 +280,18 @@ a.a2:hover{
 
 #h4{
     color:white;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'TypoPRO Bebas Neue';
 }
 #p{
     color:#ddd;
    
 }
-#p1{
-    color:#f8d16c;
-}
 #p2{
     position:static;
     left:2px;
+}
+#p1{
+    color:#f8d16c;
 }
 
 #logo{
