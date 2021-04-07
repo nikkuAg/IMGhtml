@@ -6,6 +6,11 @@
     src: url(TypoPRO-BebasNeue-Light/TypoPRO-BebasNeue-Light.ttf);
 }
 
+ @media screen and (max-width: 600px) {
+    .nav2 {
+        flex-direction: column;
+    }
+  } 
 .nav1{
     display: flex;
     flex: 50%;
@@ -19,6 +24,8 @@
     display: flex;
     flex: 50%;
     justify-content: space-evenly;
+    align-content: space-around;
+    align-items: stretch;
     font-family: 'TypoPRO Bebas Neue';
     font-size: 17px;
 }
