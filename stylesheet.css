@@ -7,13 +7,15 @@
 } 
 @media screen and (max-width: 600px) {
     .nav2 {
-        flex-direction: column;
+        flex-direction: row;
+        overflow: hidden;
     }
 }
 body{
     font-family: 'Lato', sans-serif;
 }
-.nav1{
+
+    .nav1{
     display: flex;
     flex: 50%;
     justify-content: flex-start;
@@ -182,25 +184,21 @@ a.a2:hover{
 }
 
 .box1{
-    flex: 50%;
     display: flex;
     align-content: center;
     width: 50%;
     height: 100vh;
     flex-wrap: wrap;
-    /* background-color:#293b52; */
     order: 1;
 }
 
 .box2{
-    flex: 50%;
     display: flex;
     justify-content: center;
     align-content: center;
     flex-wrap: wrap;
     width: 50%;
     height: 100vh;
-    /* background-color: #f8d16c; */
     order: 2;
 }
 
@@ -216,12 +214,13 @@ a.a2:hover{
     padding-bottom: 0px;
     padding-top: 0px;
     order: 1;
+    max-width: 100%;
 }
 #head1{
     min-height: 1rem;
     /* margin: calc(2rem - .14285714em) 0 1rem; */
     font-weight: 500;
-    background-image: linear-gradient( to right, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.2) 52.7%, rgba(255, 255, 255, 0.2) 52.7%, transparent 52.7%, transparent 52.7% );
+    background-image: linear-gradient( to right, rgba(122, 117, 117, 0.2) 0%, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.2) 52.7%, transparent 52.7%, transparent 52.7% );
 }
 #head2{
     background-image: linear-gradient( to right, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.2) 42.7%, rgba(255, 255, 255, 0.2) 42.7%, transparent 42.7%, transparent 42.7% );
@@ -238,6 +237,7 @@ a.a2:hover{
     padding-top: 0px;
     padding-right: 1.2em;
     font-family: 'Lato', sans-serif;
+    max-width: 100%;
 }
 
 .image{
