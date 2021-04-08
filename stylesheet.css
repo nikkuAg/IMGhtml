@@ -10,7 +10,7 @@ body{
     font-family: 'Lato', sans-serif;
 }
 
-    .nav1{
+.nav1{
     display: flex;
     flex: 50%;
     justify-content: flex-start;
@@ -18,23 +18,38 @@ body{
     background-color: white;
     position: sticky;
     top:0;
-    padding-bottom: 7px;
-    padding-top: 8px;
+    padding-top: 0px;
+    padding-bottom: 0px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: 2px solid red;
 }
 .nav2{
+    display: flex;
+    justify-content: space-between;
+    align-content: space-around;
+    align-items: stretch;
+    font-family: 'TypoPRO Bebas Neue';
+    font-size: 15px;
+    font-weight: bolder;
+    color: #263146;
+}
+.dropdown{
+    display: none;
+    visibility: hidden;
+    position: fixed;
+}
+.nav{
+    visibility: visible;
+    width: 100%;
     display: flex;
     justify-content: space-evenly;
     align-content: space-around;
     align-items: stretch;
     font-family: 'TypoPRO Bebas Neue';
-    font-size: 17px;
+    font-size: 15px;
     font-weight: bolder;
-    padding-left: 45px;
-    white-space: nowrap;
     color: #263146
 }
-
 a.a1:link, a.a1:visited{
     color: rgba(0, 0, 0, 1);
     text-decoration: none;
@@ -86,12 +101,14 @@ a.a2:hover{
     flex-wrap: wrap;
     flex-grow: 2;
     margin-bottom: 5px;
+    width:50%;
 }
 
 .itemList2{
     display: flex;
     flex-wrap: wrap;
     flex-grow: 2;
+    width: 50%;
 }
 .title{
     color:  #000000;
@@ -103,8 +120,8 @@ a.a2:hover{
     font-size: 14px;
     padding-right:50px;
     padding-left: 50px;
-    padding-top: 30px; 
-    width:180px;
+    padding-top: 30px;
+    width: 25%;
     text-align: right;
 }
 .p1{
@@ -125,7 +142,7 @@ a.a2:hover{
     text-align : left;
     font-size: 15em;
     margin-bottom:-200px;
-    padding-right: 155px;
+    padding-right: 170px;
     font-family: 'TypoPRO Bebas Neue';
     color: rgba(248, 209, 108, 0.5);
 }
@@ -144,7 +161,7 @@ a.a2:hover{
 }
 .homeBlog2{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-content: center;
     align-items: center;
     flex-wrap: wrap;
@@ -171,10 +188,12 @@ a.a2:hover{
 }
 
 .footer{
+    display: flex;
+    align-items: center;
     background-color: #263146;
+    font-size: 14px;
     margin: 0px;
-    padding: 10px;
-    padding-bottom: 5px;
+    padding-left: 80px;
     color: white;
 }
 
@@ -275,7 +294,7 @@ a.a2:hover{
     margin-bottom: 50px;
     padding-top: 40px;
     padding-left: 50px;
-    width: 350px;
+    width: 300px;
 }
 
 .blogPara{
@@ -283,6 +302,8 @@ a.a2:hover{
     font-size: 16px;
     padding-left: 50px;
     padding-right: 50px;
+    text-align: center;
+    padding-bottom: 20px;
 }
 
 .Link{
@@ -301,8 +322,8 @@ a.a2:hover{
 
 .homeAbout{
     display: flex;
+    flex-direction: row-reverse;
     justify-content: space-between;
-    align-items: stretch;
     flex-wrap: wrap;
     background-color: #293b52;
     padding-bottom: 10px;
@@ -311,16 +332,18 @@ a.a2:hover{
 }
 
 .about{
-    order: 2;
+    order: 1;
+    padding-right: 0px;
     padding-left: 60px;
-    padding-right: 60px;
     display: inline-block;
-    margin-right: 0px;
+    margin-right: 40px;
 }
 .contact{
-    order: 1;
+    order: 2;
+    margin-left: 40px;
+    padding-left: 40px;
+    padding-bottom: 20px;
     display: inline-block;
-    padding-left: 60px; 
 }
 
 #h4{
@@ -328,27 +351,30 @@ a.a2:hover{
     line-height: 2;
     font-family: "TypoPRO Bebas Neue";
     color: #fff;
-    /* padding-top: 28px; */
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding-top: 28px
 }
 #p{
     color: #ddd;
     font-size: 14px;
     line-height: 1.7;
-    max-width: 500px;
-   
+    max-width: 560px;
+    margin: 0px;
+
+}
+#p1{
+    color:#f8d16c;
 }
 #p2{
     /* position:static; */
     left:2px;
 }
-#p1{
-    color:#f8d16c;
-}
-
 #logo{
     height: 50px;
     padding-top: 5px;
     padding-left: 75px;
+    border: 2px solid red;
 }
 
 .projecList{
@@ -444,6 +470,7 @@ a.a2:hover{
 a.i1:hover{
     position: relative;
     top:-7px;
+    z-index: -1;
 }
 
 
@@ -480,8 +507,25 @@ a.i1:hover{
     padding-bottom: 24px;
 }
 
-
-@media (max-width: 500px) {
+@media (max-width: 900px){
+    .homeAbout{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start
+    }
+    .about{
+        padding-left: 20px;
+        margin-right: 0px;
+    }
+    .contact{
+        padding-left: 20px;
+        margin-left: 0px;
+    }
+    .footer{
+        padding-left: 20px;
+    }
+}
+@media (max-width: 600px) {
     .nav2 {
         flex-direction: row;
 
@@ -497,6 +541,7 @@ a.i1:hover{
         margin-bottom: 0px;
         font-size: 2.3em;
     }
+    
     #head2{
         margin-top: 10px;
         margin-bottom: 10px;
@@ -506,4 +551,102 @@ a.i1:hover{
         font-size: 17px;
         width: 100%;
     }
+    .img2{
+        margin-left: 0px;
+        padding-left: 0px;
+    }
+    .itemList1{
+        width: 100%;
+    }
+    .itemList2{
+        width: 100%;
+    }
+    .nav{
+        visibility: hidden;
+    }
+    .dropdown {
+      visibility: visible;
+      position: relative;
+      display: inline-block;
+      right: 50%;
+    }
+    .dropbtn {
+        color: black;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+      }
+      
+      
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        min-width: 160px;
+        overflow: auto;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+      
+      .a1 {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+      
+      .show {display: block;}
+      
+      .menu{
+       width: 35px;
+        height: 5px;
+        background-color: black;
+        margin: 6px 0;
+      }
 }
+
+
+
+
+
+
+
+.dropbtn {
+    background-color: white;
+    color: black;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .a1 {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .show {display: block;}
+  
+  .menu{
+   width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+  }
