@@ -229,7 +229,7 @@ a.a2:hover{
     order: 1;
     max-width: 100%;
 }
-#head1{
+#head1, #head2{
     min-height: 1rem;
     font-weight: 500;
 }
@@ -239,10 +239,9 @@ a.a2:hover{
 #with{
     background-image: linear-gradient( to right, rgba(122, 117, 117, 0.2) 0%, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.2) 45%, transparent 45%, transparent 45% );
 }
-#head2{
-    background-image: linear-gradient( to right, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.2) 42.7%, rgba(255, 255, 255, 0.2) 42.7%, transparent 42.7%, transparent 42.7% );
+#idea{
+    background-image: linear-gradient( to right, rgba(122, 117, 117, 0.2) 0%, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.2) 57%, transparent 57%, transparent 57% );
 }
-
 .para{
     flex: 50%;
     order: 2;
@@ -254,7 +253,7 @@ a.a2:hover{
     padding-top: 0px;
     padding-right: 1.2em;
     font-family: 'Lato', sans-serif;
-    max-width: 100%;
+    width: 100%;
 }
 
 .image{
@@ -522,8 +521,30 @@ a.i1:hover{
     .footer{
         padding-left: 20px;
     }
+    .heading1{
+        margin-top: 50px;
+        margin-bottom: 0px;
+        font-size: 3.5em;
+    }
+    
+    .para{
+        padding-right: 0px;
+        font-size: 20px;
+        width: 100%;
+    }
+    .img2{
+        margin-left: 0px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
 }
 @media (max-width: 600px) {
+    .box1{
+        flex-shrink: 1;
+    }
+    .box2{
+        flex-shrink: 3;
+    }
     .nav2 {
         flex-direction: row;
 
@@ -534,7 +555,7 @@ a.i1:hover{
     .heading1{
         margin-top: 50px;
         margin-bottom: 0px;
-        font-size: 2.3em;
+        font-size: 3.5em;
     }
     
     #head2{
