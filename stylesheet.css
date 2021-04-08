@@ -5,18 +5,7 @@
     font-family: TypoPRO Bebas Neue;
     src: url(TypoPRO-BebasNeue-Light/TypoPRO-BebasNeue-Light.ttf);
 } 
-@media screen and (max-width: 600px) {
-    .nav2 {
-        flex-direction: row;
 
-    }
-    .hBlog{
-        margin: 20px;
-    }
-    .hBlog2{
-        overflow: hidden;
-    }
-}
 body{
     font-family: 'Lato', sans-serif;
 }
@@ -192,7 +181,7 @@ a.a2:hover{
 .box1{
     display: flex;
     align-content: center;
-    width: 50%;
+    width: 100%;
     height: 100vh;
     flex-wrap: wrap;
     order: 1;
@@ -203,7 +192,7 @@ a.a2:hover{
     justify-content: center;
     align-content: center;
     flex-wrap: wrap;
-    width: 50%;
+    width: 100%;
     height: 100vh;
     order: 2;
 }
@@ -224,9 +213,13 @@ a.a2:hover{
 }
 #head1{
     min-height: 1rem;
-    /* margin: calc(2rem - .14285714em) 0 1rem; */
     font-weight: 500;
-    background-image: linear-gradient( to right, rgba(122, 117, 117, 0.2) 0%, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.2) 52.7%, transparent 52.7%, transparent 52.7% );
+}
+#play{
+    background-image: linear-gradient( to right, rgba(122, 117, 117, 0.2) 0%, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.2) 100%, transparent 100%, transparent 100% );
+}
+#with{
+    background-image: linear-gradient( to right, rgba(122, 117, 117, 0.2) 0%, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.2) 45%, transparent 45%, transparent 45% );
 }
 #head2{
     background-image: linear-gradient( to right, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.2) 42.7%, rgba(255, 255, 255, 0.2) 42.7%, transparent 42.7%, transparent 42.7% );
@@ -485,4 +478,32 @@ a.i1:hover{
 
 #h{
     padding-bottom: 24px;
+}
+
+
+@media (max-width: 500px) {
+    .nav2 {
+        flex-direction: row;
+
+    }
+    .hBlog{
+        margin: 20px;
+    }
+    .hBlog2{
+        overflow: hidden;
+    }
+    .heading1{
+        margin-top: 50px;
+        margin-bottom: 0px;
+        font-size: 2.3em;
+    }
+    #head2{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .para{
+        padding-right: 0px;
+        font-size: 17px;
+        width: 100%;
+    }
 }
