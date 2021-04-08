@@ -8,6 +8,12 @@
 @media screen and (max-width: 600px) {
     .nav2 {
         flex-direction: row;
+
+    }
+    .hBlog{
+        margin: 20px;
+    }
+    .hBlog2{
         overflow: hidden;
     }
 }
@@ -29,7 +35,6 @@ body{
 }
 .nav2{
     display: flex;
-    flex: 50%;
     justify-content: space-evenly;
     align-content: space-around;
     align-items: stretch;
@@ -91,6 +96,7 @@ a.a2:hover{
     display: flex;
     flex-wrap: wrap;
     flex-grow: 2;
+    margin-bottom: 5px;
 }
 
 .itemList2{
