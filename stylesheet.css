@@ -21,7 +21,6 @@ body{
     padding-top: 0px;
     padding-bottom: 0px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    border: 2px solid red;
 }
 .nav2{
     display: flex;
@@ -374,7 +373,6 @@ a.a2:hover{
     height: 50px;
     padding-top: 5px;
     padding-left: 75px;
-    border: 2px solid red;
 }
 
 .projecList{
@@ -530,9 +528,6 @@ a.i1:hover{
         flex-direction: row;
 
     }
-    .hBlog{
-        margin: 20px;
-    }
     .hBlog2{
         overflow: hidden;
     }
@@ -568,17 +563,19 @@ a.i1:hover{
       visibility: visible;
       position: relative;
       display: inline-block;
-      right: 50%;
+      justify-content: flex-end;
+      margin: 0px;
     }
     .dropbtn {
         color: black;
-        padding: 16px;
         font-size: 16px;
+        background-color: transparent;
+        padding-top: 8px;
+        padding-right: 35px;
         border: none;
         cursor: pointer;
+        margin: 0px;
       }
-      
-      
       .dropdown-content {
         display: none;
         position: absolute;
@@ -586,9 +583,10 @@ a.i1:hover{
         overflow: auto;
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
         z-index: 1;
+        margin: 0px;
       }
       
-      .a1 {
+      .dropdown-content a {
         color: black;
         padding: 12px 16px;
         text-decoration: none;
@@ -604,49 +602,3 @@ a.i1:hover{
         margin: 6px 0;
       }
 }
-
-
-
-
-
-
-
-.dropbtn {
-    background-color: white;
-    color: black;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-  }
-  
-  .dropdown {
-    position: relative;
-    display: inline-block;
-  }
-  
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    overflow: auto;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  .a1 {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  
-  .show {display: block;}
-  
-  .menu{
-   width: 35px;
-    height: 5px;
-    background-color: black;
-    margin: 6px 0;
-  }
