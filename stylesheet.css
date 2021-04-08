@@ -301,36 +301,27 @@ a.a2:hover{
 }
 
 .homeAbout{
-    display: flex;;
+    display: flex;
     justify-content: space-between;
     align-items: stretch;
-    /* flex-direction: row-reverse; */
     flex-wrap: wrap;
     background-color: #293b52;
     padding-bottom: 10px;
     text-align: left;
-    /* max-width: 100%; */
     
 }
 
 .about{
     order: 2;
-    /* justify-content: space-between; */
-    /* padding-left: 160px;
-    padding-right: 40px; */
-    padding-right: 50px;
-    position: relative;
+    padding-left: 60px;
+    padding-right: 60px;
     display: inline-block;
-    vertical-align: top;
+    margin-right: 0px;
 }
 .contact{
     order: 1;
-    position: relative;
     display: inline-block;
-    vertical-align: top;
-    /* padding-right: 200px;*/
     padding-left: 60px; 
-    /* justify-content: flex-end; */
 }
 
 #h4{
@@ -348,7 +339,7 @@ a.a2:hover{
    
 }
 #p2{
-    position:static;
+    /* position:static; */
     left:2px;
 }
 #p1{
