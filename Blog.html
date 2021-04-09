@@ -9,22 +9,24 @@
     <link rel="stylesheet" href="stylesheet.css">
 </head>
 <body style="margin: 0px;">
-    <div id="navigation" style="background-image: none; background-color: white; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
-        <div class="nav1">
+    <div id="navigation" style="background-image: none; background-color: white; width: 100%; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+        <div class="nav1" id="nav1">
             <div style="flex: 50%;">
-                <a href="Home.html" target="_self"><img src="https://channeli.in//static/maintainer_site/logo.svg#maintainer_logo" id="logo"></a>
+                <a href="Home.html" target="_self" >
+                    <img src="https://channeli.in//static/maintainer_site/logo.svg#maintainer_logo" id="logo" style="padding-left: 25px;">
+                </a>
             </div>
             <div style="flex: 50%;" class="nav2">
-                <div class="nav">
-                    <div ><h3><a href="Blog.html" target="_blank" class="a1" style="padding-bottom: 7px; border-bottom: 2px solid black;">&nbsp&nbsp&nbsp&nbspBlog&nbsp&nbsp&nbsp&nbsp</a></h3></div>
-                    <div><h3><a href="#" class="a1">Projects</a></h3></div>
-                    <div><h3><a href="#" class="a1">Team</a></h3></div>
-                    <div><h3><a href="#" class="a1">Alumni</a></h3></div>
-                </div>        
+                    <div class="nav">
+                        <div><h3 class="hBlog"><a href="Blog.html" target="_blank" class="a1">Blog</a></h3></div>
+                        <div><h3 class="hBlog2"><a href="#" class="a1">Projects</a></h3></div>
+                        <div><h3 class="hBlog2"><a href="#" class="a1">Team</a></h3></div>
+                        <div><h3 class="hBlog2"><a href="#" class="a1">Alumni</a></h3></div>
+                    </div>
             </div>
-            <div class="dropdown">
-                <button onclick="myFunction()" class="dropbtn"><div class="menu"></div><div class="menu"></div><div class="menu"></div></button>
-                <div id="myDropdown" class="dropdown-content">
+            <div class="dropdown" style="margin: 0px; padding: 0px; padding-top: 5px;">
+                <button onclick="myFunction()" class="dropbtn" style="margin: 0px; padding: 0px; padding-right: 5px; padding-left: 50px;"><div class="menu"></div><div class="menu"></div><div class="menu"></div></button>
+                <div id="myDropdown" class="dropdown-content" style="margin: 0px; padding: 0px;">
                     <div><h3 class="hBlog"><a href="Blog.html" target="_blank" class="a1">Blog</a></h3></div>
                     <div><h3 class="hBlog2"><a href="#" class="a1">Projects</a></h3></div>
                     <div><h3 class="hBlog2"><a href="#" class="a1">Team</a></h3></div>
@@ -33,6 +35,7 @@
             </div>
         </div>
     </div>
+
     <div class="blog1">
         <a href="https://medium.com/img-iit-roorkee/the-fourth-ingredient-of-channeli-c5506f583c78" class="i1" target="_blank">
             <div  class="background1">
