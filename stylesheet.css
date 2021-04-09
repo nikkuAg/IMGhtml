@@ -9,15 +9,20 @@
 body{
     font-family: 'Lato', sans-serif;
 }
-
+#navigation{
+    background-image: url("images/background.svg");
+    background-size: cover;
+    position: sticky;
+    top:0;
+}
+#nav1{
+    transition: background-color 0.6s;
+}
 .nav1{
     display: flex;
     flex: 50%;
     justify-content: flex-start;
-    position: -webkit-sticky;
-    background-color: white;
-    position: sticky;
-    top:0;
+    background-color: transparent;
     padding-top: 0px;
     padding-bottom: 0px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -586,25 +591,31 @@ a.i1:hover{
       display: inline-block;
       justify-content: flex-end;
       margin: 0px;
+      padding-right: 30px;
     }
     .dropbtn {
         color: black;
         font-size: 16px;
         background-color: transparent;
         padding-top: 8px;
+        margin-right: 20px;
         padding-right: 35px;
         border: none;
         cursor: pointer;
         margin: 0px;
       }
       .dropdown-content {
+        background-color: white;
         display: none;
+        width: 0%;
+        max-width: 125px;
+        height: 100vh;
         position: absolute;
-        min-width: 160px;
         overflow: auto;
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
         z-index: 1;
         margin: 0px;
+        transition: width 2s;
       }
       
       .dropdown-content a {
@@ -617,9 +628,15 @@ a.i1:hover{
       .show {display: block;}
       
       .menu{
-       width: 35px;
+        width: 35px;
         height: 5px;
         background-color: black;
         margin: 6px 0;
       }
+
 }
+
+
+
+
+

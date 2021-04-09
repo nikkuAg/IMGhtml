@@ -10,31 +10,34 @@
 
 </head>
 <body style="margin: 0px;">
-    <div class="nav1">
-        <div style="flex: 50%;">
-           <a href="Home.html" target="_self" >
-                <img src="https://channeli.in//static/maintainer_site/logo.svg#maintainer_logo" id="logo">
-            </a>
-            
-        </div>
-        <div style="flex: 50%;" class="nav2">
-                <div class="nav">
+    <div id="navigation">
+        <div class="nav1" id="nav1">
+            <div style="flex: 50%;">
+               <a href="Home.html" target="_self" >
+                    <img src="https://channeli.in//static/maintainer_site/logo.svg#maintainer_logo" id="logo">
+                </a>
+                
+            </div>
+            <div style="flex: 50%;" class="nav2">
+                    <div class="nav">
+                        <div><h3 class="hBlog"><a href="Blog.html" target="_blank" class="a1">Blog</a></h3></div>
+                        <div><h3 class="hBlog2"><a href="#" class="a1">Projects</a></h3></div>
+                        <div><h3 class="hBlog2"><a href="#" class="a1">Team</a></h3></div>
+                        <div><h3 class="hBlog2"><a href="#" class="a1">Alumni</a></h3></div>
+                    </div>
+            </div>
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn"><div class="menu"></div><div class="menu"></div><div class="menu"></div></button>
+                <div id="myDropdown" class="dropdown-content">
                     <div><h3 class="hBlog"><a href="Blog.html" target="_blank" class="a1">Blog</a></h3></div>
-                    <div><h3 class="hBlog2"><a href="#" target="_blank" class="a1">Projects</a></h3></div>
-                    <div><h3 class="hBlog2"><a href="#" target="_blank" class="a1">Team</a></h3></div>
-                    <div><h3 class="hBlog2"><a href="#" target="_blank" class="a1">Alumni</a></h3></div>
+                    <div><h3 class="hBlog2"><a href="#" class="a1">Projects</a></h3></div>
+                    <div><h3 class="hBlog2"><a href="#" class="a1">Team</a></h3></div>
+                    <div><h3 class="hBlog2"><a href="#" class="a1">Alumni</a></h3></div>
                 </div>
-        </div>
-        <div class="dropdown">
-            <button onclick="myFunction()" class="dropbtn"><div class="menu"></div><div class="menu"></div><div class="menu"></div></button>
-            <div id="myDropdown" class="dropdown-content">
-                <div><h3 class="hBlog"><a href="Blog.html" target="_blank" class="a1">Blog</a></h3></div>
-                <div><h3 class="hBlog2"><a href="#" target="_blank" class="a1">Projects</a></h3></div>
-                <div><h3 class="hBlog2"><a href="#" target="_blank" class="a1">Team</a></h3></div>
-                <div><h3 class="hBlog2"><a href="#" target="_blank" class="a1">Alumni</a></h3></div>
             </div>
         </div>
     </div>
+    
     <div style="background-image: url(images/background.svg); background-size: cover;">
        
         <div class="homeContainer">
@@ -161,6 +164,7 @@
     <script>
         function myFunction() {
           document.getElementById("myDropdown").classList.toggle("show");
+          document.getElementById("myDropdown").style.width = "100%";
         }
         
         window.onclick = function(event) {
@@ -175,6 +179,19 @@
             }
           }
         }
+
+
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
+                document.getElementById("nav1").style.backgroundColor = "white";
+                document.getElementById("nav1").style.boxShadow = "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)";
+            } else {
+                document.getElementById("nav1").style.backgroundColor = "transparent";
+                document.getElementById("nav1").style.boxShadow = "0px 0px 0px";
+        }
+}
         </script>
 </body>
 </html>
