@@ -17,6 +17,7 @@ body{
 }
 #nav1{
     transition: background-color 0.6s;
+    margin: 0px;
 }
 .nav1{
     display: flex;
@@ -598,7 +599,6 @@ a.i1:hover{
         font-size: 16px;
         background-color: transparent;
         padding-top: 8px;
-        margin-right: 20px;
         padding-right: 35px;
         border: none;
         cursor: pointer;
@@ -632,6 +632,10 @@ a.i1:hover{
         height: 5px;
         background-color: black;
         margin: 6px 0;
+      }
+      #navigation{
+          background-image: none;
+          background-color: #293b52;
       }
 
 }
