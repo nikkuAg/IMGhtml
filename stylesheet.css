@@ -374,7 +374,7 @@ a.a2:hover{
 #logo{
     height: 50px;
     padding-top: 5px;
-    padding-left: 75px;
+    padding-left: 50px;
 }
 
 .projecList{
@@ -541,7 +541,7 @@ a.i1:hover{
         padding-right: 40px;
     }
 }
-@media (max-width: 600px) {
+@media (max-width: 700px) {
     .box1{
         flex-shrink: 1;
     }
@@ -589,14 +589,14 @@ a.i1:hover{
       display: inline-block;
       justify-content: flex-end;
       margin: 0px;
-      padding-right: 30px;
+      padding-right: 0px;
     }
     .dropbtn {
         color: black;
         font-size: 16px;
         background-color: transparent;
         padding-top: 8px;
-        padding-right: 0px;
+        padding-right: 25px;
         padding-left: 45px;
         border: none;
         cursor: pointer;
