@@ -506,8 +506,23 @@ a.i1:hover{
     box-shadow: none;
 }
 
-#h{
+.h1{
     padding-bottom: 24px;
+}
+.h2{
+    padding-bottom: 24px;
+}
+.h3{
+    padding-bottom: 24px;
+}
+.h4{
+    padding-bottom: 24px;
+}
+.h5{
+    padding-bottom: 24px;
+}
+.h6{
+    padding-bottom: 5px;
 }
 
 @media (max-width: 900px){
@@ -658,16 +673,70 @@ a.i1:hover{
         margin-left: 1em;
         margin-right: 1em;
     }
+    .blog1{
+        margin-left: 20px;
+    }
     
+}
+@media only screen and (max-width: 300px) {
+    .h1{
+        padding-bottom: 10px;
+    }
+    .h4{
+        padding-bottom: 10px;
+    }   
+}
+@media only screen and (max-width: 270px) {
+    .h3{
+        padding-bottom: 10px;
+    }
+    .h5{
+        padding-bottom: 10px;
+    }   
+}
+@media only screen and (max-width: 270px) {
+    .h3{
+        padding-bottom: 0px;
+    }
+    .h5{
+        padding-bottom: 0px;
+    }
+    .h2{
+        padding-bottom: 0px;
+    }
+    .h1{
+        padding-bottom: 0px;
+    }
+    .h4{
+        padding-bottom: 0px;
+    }
+    .h6{
+        padding-bottom: 0px;
+    }   
+    .extra{
+        padding-bottom: 0px;
+        padding: 0px;
+    }
+}
+@media only screen and (max-width: 400px){
+    .i1{
+        width: 100vw;
+    }
+    .blog1{
+        margin-left: 5px;
+        margin-right: 5px;
+    }    
 }
 
 #page-container {
     position: relative;
     min-height: 100vh;
+    margin: 0px;
   }
   
   #content-wrap {
     padding-bottom: 2.5rem;
+    margin: 0px;
   }
   
   #footer1 {
