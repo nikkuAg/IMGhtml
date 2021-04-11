@@ -524,7 +524,37 @@ a.i1:hover{
 .h6{
     padding-bottom: 5px;
 }
+#page-container {
+    position: relative;
+    min-height: 100vh;
+    margin: 0px;
+  }
+  
+#content-wrap {
+    padding-bottom: 2.5rem;
+    margin: 0px;
+}
+  
+#footer1 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+    right: 0px;
+    padding-left: 50px;
+}
 
+
+@media only screen and (min-width: 1359px){
+    .h6{
+        padding-bottom: 24px;
+    }
+}
+@media only screen and (max-width: 1113px) {
+    .h4{
+        padding-bottom: 5px;
+    }
+}
 @media only screen and (min-width: 768px) and (max-width: 991px){
     .i1{
         width: calc(50% - 2em);
@@ -578,6 +608,11 @@ a.i1:hover{
         margin-left: 20px;
     }
     
+}
+@media only screen and (min-width: 774px) and (max-width: 990px){
+    .h4{
+        padding-bottom: 24px;
+    }
 }
 @media (max-width: 700px) {
     .box1{
@@ -770,22 +805,3 @@ a.i1:hover{
     }
 }
 
-#page-container {
-    position: relative;
-    min-height: 100vh;
-    margin: 0px;
-  }
-  
-  #content-wrap {
-    padding-bottom: 2.5rem;
-    margin: 0px;
-  }
-  
-  #footer1 {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 2.5rem;
-    right: 0px;
-    padding-left: 50px;
-  }
