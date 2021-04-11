@@ -525,6 +525,15 @@ a.i1:hover{
     padding-bottom: 5px;
 }
 
+@media only screen and (min-width: 768px) and (max-width: 991px){
+    .i1{
+        width: calc(50% - 2em);
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+    
+}
+
 @media (max-width: 900px){
     .homeAbout{
         flex-direction: column;
@@ -558,6 +567,17 @@ a.i1:hover{
         padding-left: 40px;
         padding-right: 40px;
     }
+}
+@media only screen and  (max-width: 767px){
+    .i1{
+        width: calc(100% - 2em);
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+    .blog1{
+        margin-left: 20px;
+    }
+    
 }
 @media (max-width: 700px) {
     .box1{
@@ -599,7 +619,11 @@ a.i1:hover{
         width: 100%;
     }
     .nav{
+        display: none;
         visibility: hidden;
+    }
+    .nav2{
+        display: none;
     }
     .dropdown {
       visibility: visible;
@@ -659,24 +683,19 @@ a.i1:hover{
     }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px){
+@media only screen and (max-width: 400px){
     .i1{
-        width: calc(50% - 2em);
-        margin-left: 1em;
-        margin-right: 1em;
-    }
-    
-}
-@media only screen and  (max-width: 767px){
-    .i1{
-        width: calc(100% - 2em);
-        margin-left: 1em;
-        margin-right: 1em;
+        width: 100vw;
     }
     .blog1{
-        margin-left: 20px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }    
+}
+@media only screen and (max-width: 347px){
+    .h4{
+        padding-bottom: 5px;
     }
-    
 }
 @media only screen and (max-width: 300px) {
     .h1{
@@ -686,15 +705,24 @@ a.i1:hover{
         padding-bottom: 10px;
     }   
 }
-@media only screen and (max-width: 270px) {
+@media only screen and (max-width: 290px) {
     .h3{
+        padding-bottom: 0px;
+    }
+    .bloga3{
         padding-bottom: 10px;
+    }
+    .h6{
+        padding-bottom: 0px;
+    }
+    .bloga6{
+        padding-bottom: 5px;
     }
     .h5{
         padding-bottom: 10px;
     }   
 }
-@media only screen and (max-width: 270px) {
+@media only screen and (max-width: 260px) {
     .h3{
         padding-bottom: 0px;
     }
@@ -718,14 +746,28 @@ a.i1:hover{
         padding: 0px;
     }
 }
-@media only screen and (max-width: 400px){
-    .i1{
-        width: 100vw;
+@media only screen and (max-width: 222px){
+    .bloga1, .bloga6, .bloga3{
+        padding-bottom: 30px;
     }
-    .blog1{
-        margin-left: 5px;
-        margin-right: 5px;
-    }    
+    .bloga4{
+        padding-bottom: 35px;
+    }
+}
+@media only screen and (max-width: 200px) {
+    .bloga6{
+        padding-bottom: 60px;
+    } 
+}
+@media only screen and (max-width: 190px) {
+    .bloga5{
+        padding-bottom: 40px;
+    }
+}
+@media only screen and (max-width: 180){
+    .bloga6{
+        padding-bottom: 60px;
+    }
 }
 
 #page-container {
@@ -744,4 +786,6 @@ a.i1:hover{
     bottom: 0;
     width: 100%;
     height: 2.5rem;
+    right: 0px;
+    padding-left: 50px;
   }
